@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limite de velocidade</title>
+    <style>
+        body{
+            background-color: lightcyan;
+            color: black;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do veículo: <input type="number" name="velocidade" id="velocidade">
+    <input type="button" value="botão" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            vel = document.getElementById("velocidade")
+            resultado = window.document.getElementById("res")
+            nu = Number(vel.value)
+            
+            if(nu > 80){
+                alert(`Você está a ${nu} Km/h, ou seja, está ultrapassando a velocidade!`)
+                confirm('Tente diminuir sua velocidade!')
+                resultado.innerHTML = "<P>Você foi <strong>MULTADO</strong> por excesso de velocidade</P>"
+            } 
+            
+            if (nu < 80){
+                alert(`Você está a ${nu} Km/h, está dentro da velocidade permitida!`)
+                h = confirm("Você está de cinto de segurança?")
+                
+                if(h==false){
+                    alert('Coloque o sinto e dirija com segurança!')
+                } 
+                
+                else{
+                    alert('Dirija com segurança!')
+                }
+            }
+        }
+    </script>
+</body>
+</html>

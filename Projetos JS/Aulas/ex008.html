@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores e Multiplicando Em Ordem Aritmética</title>
+    <style>
+        body{
+            font: normal 15pt Arial;
+            background: palegreen;
+            color: black;
+        }
+        input{
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#resultado{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SOMANDO E MULTIPLICANDO VALORES EM ORDEM ARITMÉTICA</h1>
+    <input type="number" name="soma1" id="soma1"> +
+    <input type="number" name="soma2" id="soma2"> X
+    <input type="number" name="mult1" id="mult1">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="resultado">Resultado:</div>
+    <script>
+        function somar(){
+            var sm1 = document.getElementById('soma1')
+            var sm2 = document.getElementById('soma2')
+            var sm3 = document.getElementById('mult1')
+            var res = document.getElementById('resultado')
+            var s = Number(sm1.value) + Number(sm2.value) * Number(sm3.value)
+            res.innerHTML = `Multiplicando <strong>${Number(sm2.value)}</strong> por <strong>${Number(sm3.value)}</strong> e somando com <strong>${Number(sm1.value)}</strong> é igual a: <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>

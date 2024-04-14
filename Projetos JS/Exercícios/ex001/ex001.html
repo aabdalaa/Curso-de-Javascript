@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+            color: antiquewhite;
+        }
+        section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+        }
+        header {
+            text-align: center;
+            color: white;
+        }
+        div {
+            text-align: center;
+            padding: 5px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HORA DO DIA</h1>
+    </header>   
+    
+    <section>
+        <div id="mod"></div>
+        <div id="img"></div>
+    </section>
+
+    <script>
+        window.onload = function() {
+            var ui = document.getElementById("mod");
+            var img = document.getElementById("img");
+            var mh = new Date()
+            var hora = mh.getHours()
+            alert(hora)
+            if (hora >= 6 && hora < 13) {
+                ui.innerHTML = `São ${hora} horas da manhã!`;
+                document.body.style.backgroundColor = '#e2cd9f';
+                img.innerHTML = '<img src="manha.png" alt="Manhã">';
+            } else if (hora >= 13 && hora < 18) {
+                ui.innerHTML = `São ${hora} horas da tarde!`;
+                document.body.style.backgroundColor = '#b9846f';
+                img.innerHTML = '<img src="tarde.png" alt="Tarde">';
+            } else if (hora >= 18) {
+                ui.innerHTML = `São ${hora} horas da noite!`;
+                document.body.style.backgroundColor = '#515154';
+                img.innerHTML = '<img src="noite.png" alt="Noite">';
+            }
+            else if (hora >= 0) {
+                ui.innerHTML = `Agora é de madrugada, são ${hora} hora(s)!`;
+                document.body.style.backgroundColor = '#515154';
+                img.innerHTML = '<img src="noite.png" alt="Noite">';
+            }
+        };
+    </script>
+</body>
+</html>

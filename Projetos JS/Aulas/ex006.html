@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a usar o DOM</title>
+    <style>
+        body{
+            background-color: rgb(0, 104, 173);
+            color: white;
+            font: normal 15pt arial;
+        }
+        strong{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Começando a usar o DOM</h1>
+    <p class="classe1">Aqui está o primeiro resultado</p>
+    <p name="abdala">Apredendo a usar <strong>DOM</strong> no Javascript</p>
+    <div><strong id="clique">CLIQUE EM MIM...</strong></div>
+    <script>
+        /*document.write(window.document.URL)
+        document.write("<strong>OLÁ, MUNDO!</strong>")*/
+
+        /*var teste = document.body.getElementsByTagName('p')[1]
+        document.write(teste.innerText)
+        document.write(teste.innerHTML)*/
+
+        /*var corpo = document.body
+        var negrito = document.getElementsByTagName('strong')
+        corpo.style.backgroundColor = 'white'
+        negrito.style.color = 'blue'*/
+        
+        /*var teste = document.body.getElementsByTagName('p')[1]
+        alert(teste.innerHTML)
+        alert(teste.innerText)*/
+
+        /*var elementoid = document.getElementById('clique')
+        alert(elementoid.innerText)
+        alert(elementoid.innerHTML)
+        elementoid.style.background = 'red'*/
+
+        /*var elementonome = document.getElementsByName('abdala')[0]
+        elementonome.innerText = 'OLÁ!'
+        var elementoclass = document.getElementsByClassName('classe1')[0]
+        elementoclass.innerHTML = 'DIGA OLÁ!'*/
+
+        /*var elementoselector = document.querySelector('p.classe1')
+        elementoselector.style.background = 'red'*/
+    </script>
+</body>
+</html>

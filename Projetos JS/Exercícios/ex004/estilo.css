@@ -1,0 +1,33 @@
+body {
+    font: normal 15pt Arial;
+    color: antiquewhite;
+    background-color: rgb(3, 228, 190);
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+  }
+  
+  header {
+    text-align: center;
+    color: white;
+  }
+  
+  div {
+    text-align: center;
+    padding: 5px;
+    color: black;
+  }
+
+  #seltab {
+    margin-top: 10px;
+    width: 100%;
+}

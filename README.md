@@ -1,7 +1,7 @@
 # Curso de Javascript
  
 ## Projetos do Curso
-Bem-vindo ao repositório de projetos do Curso de JavaScript do Professor Gustavo Guanabara! Aqui você encontrará uma coleção de 28 projetos desenvolvidos como parte do curso, cobrindo uma variedade de tópicos essenciais em JavaScript.
+Bem-vindo ao repositório do Curso de JavaScript do Professor Gustavo Guanabara! Aqui você encontrará uma coleção de 28 projetos desenvolvidos como parte do curso, cobrindo uma variedade de tópicos essenciais em JavaScript.
 
 ## Sobre o Curso
 O Curso de JavaScript oferecido pelo Professor Gustavo Guanabara, em parceria com a Google e lançado em 2019, é reconhecido por sua abordagem prática e didática. Ele guia os alunos desde os fundamentos até os conceitos básicos da linguagem JavaScript.

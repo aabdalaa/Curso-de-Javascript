@@ -12,4 +12,4 @@ Estamos sempre abertos a contribuições para aprimorar os projetos existentes o
 ## Curso em Vídeo
 Para mais informações sobre o curso, visite o site oficial do Curso em Vídeo [aqui](https://www.cursoemvideo.com).
 
-Observação: Este repositório é exclusivamente para fins educacionais e de aprendizado. Os projetos incluídos foram desenvolvidos como parte do curso do Professor Gustavo Guanabara e estão disponíveis para referência e prática de programação em JavaScript.
+**Observação:** Este repositório é exclusivamente para fins educacionais e de aprendizado. Os projetos incluídos foram desenvolvidos como parte do curso do Professor Gustavo Guanabara e estão disponíveis para referência e prática de programação em JavaScript.
